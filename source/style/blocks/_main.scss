@@ -170,6 +170,8 @@
   }
   .logo__link{
     position: static;
+    left: 0;
+    transform: translateY(0);
   }
   .logo__image{
     max-width: 100%;
