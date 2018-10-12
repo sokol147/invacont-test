@@ -34,3 +34,30 @@
     }
   }
 }
+
+@media only screen and (max-width: 980px){
+  .products{
+    padding: 0 4.8rem 3.125rem;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  .products__item{
+    width: 50%;
+    &:not(:nth-child(n+4)){
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .products__item{
+    width: 100%;
+    &:not(:last-child){
+      margin-bottom: 1.5rem;
+    }
+  }
+  .products{
+    padding: 0 2rem 3rem;
+  }
+}

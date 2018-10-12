@@ -28,11 +28,14 @@
   ]
 header.header
   .header__content
+    .menu-btn__wrapper
+      a(href='#').menu-btn#menu-btn
+        span.menu-btn__line
     .logo__wrapper
       .logo__decor
         a.logo__link(href='/index.html')
           img(src='templates/images/logo.png' alt='logo').logo__image
-    nav.nav
+    nav.nav#nav
       ul.nav__list
         each item in nav
           li.nav__item

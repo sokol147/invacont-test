@@ -35,4 +35,150 @@
     font-family: 'Arial', sans-serif;
     font-size: 0.875rem;
   }
+  .menu-btn__wrapper{
+    display: none;
+  }
+}
+
+.menu-btn{
+  display: block;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+.menu-btn__line,
+.menu-btn__line:before,
+.menu-btn__line:after{
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #34495e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -11px;
+  transition: .3s;
+}
+.menu-btn__line:before,
+.menu-btn__line:after{
+  content: '';
+}
+.menu-btn__line:before{
+  transform: translateY(-5px);
+}
+.menu-btn__line:after{
+  transform: translateY(5px);
+}
+
+.menu-btn--active{
+  .menu-btn__line{
+    background-color: transparent;
+    &:before{
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media only screen and (max-width: 980px){
+  body{
+    font-size: 15px;
+  }
+  .nav, .nav__list{
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .nav__item{
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .nav__link{
+    color: black;
+  }
+  .nav{
+    position: absolute;
+    overflow: visible;
+    left: -1000%;
+    z-index: 10;
+    padding: 1rem;
+    width: 50vw;
+    height: 100%;
+    transition: .3s;
+    &.open{
+      left: 0%;
+      background: white;
+      border-radius: 0;
+    }
+  }
+  .main .menu-btn__wrapper{
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  .main .header__wrapper{
+    padding: 1rem 5rem 10rem;
+  }
+  .main__header{
+    padding: 0;
+  }
+  .header{
+    margin-bottom: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  body{
+    font-size: 14px;
+  }
+  .main__header{
+    font-size: 3.25rem;
+  }
+  .main .header__wrapper{
+    padding: 1rem 2rem 8rem;
+  }
+  .main .article__header{
+    font-size: 1.75rem;
+  }
+  .main .article__text{
+    font-size: 0.75rem;
+  }
+  .logo__decor:before{
+    bottom: -27px;
+  }
+}
+
+@media only screen and (max-width: 440px){
+  .logo__decor:before{
+    display: none;
+  }
+  .logo__decor:after{
+    display: none;
+  }
+  .logo__decor{
+    background: none;
+  }
+  .logo__decor{
+    max-width: 155px;
+    margin: 0;
+    height: auto;
+  }
+  .logo__link{
+    position: static;
+  }
+  .logo__image{
+    max-width: 100%;
+  }
+  .header{
+    margin-bottom: 2.5em;
+  }
+  .main__header{
+    font-size: 2.55rem;
+    line-height: 2.75rem;
+  }
 }

@@ -36,3 +36,34 @@
     }
   }
 }
+
+@media only screen and (max-width: 850px){
+  .footer__nav{
+    padding: 1.1rem 5rem;
+  }
+  .footer__copyright{
+    padding: 1.625rem 5rem
+  }
+}
+@media only screen and (max-width: 700px){
+  .footer .menu__list, .footer__copyright{
+    flex-wrap: wrap;
+  }
+  .copyrigth__text{
+    width: 100%;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 440px){
+  .footer__nav{
+    padding: 1.1rem 2rem;
+  }
+  .footer .menu__item{
+    width: 100%;
+    margin-right: 0;
+  }
+  .footer__copyright{
+    padding: 1.625rem 2rem;
+  }
+}
