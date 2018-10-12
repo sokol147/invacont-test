@@ -1,0 +1,28 @@
+-
+  var products = [
+    {
+      img: 'templates/images/product-1.jpg',
+      name: 'Potting Soil'
+    },{
+      img: 'templates/images/product-2.jpg',
+      name: 'Peat Moss'
+    },{
+      img: 'templates/images/product-3.jpg',
+      name: 'Fertilizers'
+    },{
+      img: 'templates/images/product-4.jpg',
+      name: 'Mulch'
+    },{
+      img: 'templates/images/product-5.jpg',
+      name: 'Compost'
+    },
+  ]
+- var productsText = 'Learn more'
+.products
+  ul.products__list
+    each item in products
+      li.products__item
+        figure
+          img(src=`${item.img}` alt=`${item.name}`).products__image
+          figcaption.products__name= item.name
+        a.products__link(href='#').btn-default= productsText

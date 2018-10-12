@@ -20,11 +20,15 @@ html{
   line-height: 1.6;
   -webkit-font-smoothing:antialised;
 }
+body{
+  max-width: 1280px;
+  margin: 0 auto;
+}
 h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0;
 }
-p{
+p,figure{
   margin: 0;
   padding: 0;
 }
@@ -43,4 +47,26 @@ textarea {
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
+}
+
+.btn-default{
+  font-size: 1.1875rem;
+  width: 10.5rem;
+  height: 3.75rem;
+  box-sizing: border-box;
+  display: block;
+  line-height: 3.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'NIMBSTB', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid $btn-default-border;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: .3s;
+  &:hover{
+    color: $main-green;
+    border-color: $main-green;
+  }
 }

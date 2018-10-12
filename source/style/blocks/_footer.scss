@@ -1,0 +1,38 @@
+.footer{
+  border-top: 2px solid $boder-green;
+  &__nav{
+    padding: 1.1rem 9rem;
+  }
+  &__copyright{
+    font-family: Arial, sans-serif;
+    padding: 1.625rem 9rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: $bg-grey;
+    color: $font-dark-grey;
+    font-size: 0.75rem;
+  }
+  .menu{
+    &__list{
+      display: flex;
+      justify-content: center;
+      font-size: 1.1875rem;
+    }
+    &__item{
+      &:not(:last-child){
+        margin-right: 2.25rem;
+      }
+    }
+    &__link{
+      font-family: 'NIMBSTB', sans-serif;
+      color: $font-black-grey;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: .3s;
+      &:hover,
+      &--active{
+        color: $main-green;
+      }
+    }
+  }
+}

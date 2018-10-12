@@ -1,0 +1,37 @@
+.benefits{
+  background-image: url(../images/bg-benefits.jpg);
+  background-color: #c2caa7;
+  padding: 4.3rem 10rem 5.9375rem;
+  &__content{
+    max-width: 27.5rem;
+  }
+  &__btn{
+    color: $second-green;
+    border-color: $second-green;
+    &:hover{
+      color: #ffffff;
+      background-color: $second-green;
+    }
+  }
+  &__header{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 2.125rem;
+    margin-bottom: 1.875rem;
+    span{
+      font-size: 3.375rem;
+      color: $second-green;
+      font-weight: 700;
+      width: 100%;
+      display: block;
+      line-height: 2.675rem;
+    }
+  }
+  &__text{
+    margin-bottom: 1.025rem;
+    font-size: 0.9rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    line-height: 1.6rem;
+  }
+}

@@ -1,0 +1,35 @@
+-
+  menu = [
+    {
+      link: '/index.html',
+      text: 'Home',
+      active: ''
+    },{
+      link: '#',
+      text: 'Mulch Supplier',
+      active: ''
+    },{
+      link: '#',
+      text: 'Soils',
+      active: ''
+    },{
+      link: '#',
+      text: 'Mulch Fundraisers',
+      active: 'active'
+    },{
+      link: '#',
+      text: 'Contact Us',
+      acitve: ''
+    }
+  ]
+- var copyText = '© Nursery Supply Co. All rights reserved.'
+- var copyDev = 'Development by Nursery Supply Co. 2016'
+footer.footer
+  .footer__nav
+    ul.footer__menu.menu__list
+      each item in menu
+        li.menu__item
+          a.menu__link(href=`${item.link}` class=`menu__link--${item.active}`)= item.text
+  .footer__copyright
+    p.copyrigth__text= copyText
+    p.copyrigth__dev= copyDev

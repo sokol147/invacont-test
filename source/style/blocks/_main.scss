@@ -1,0 +1,38 @@
+.main{
+  .header__wrapper{
+    padding: 1rem 10rem 15rem;
+    background: url(../images/bg-main-screen.jpg) no-repeat bottom;
+    background-size: cover;
+  }
+  &__header{
+    font-size: 4.25rem;
+    position: relative;
+    text-align: center;
+    line-height: 3.75rem;
+    color: $font-white-grey;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    padding: 0 3.4375rem;
+    margin-bottom: 1.35rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  &__article{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.55rem 1.875rem 2.15rem;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 6px;
+  }
+  .article__header{
+    font-size: 2.125rem;
+    color: $font-white-grey;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+  }
+  .article__text{
+    font-family: 'Arial', sans-serif;
+    font-size: 0.875rem;
+  }
+}
