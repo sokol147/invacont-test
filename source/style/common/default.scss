@@ -2,7 +2,9 @@ body, html{
 	margin:0;
 	padding: 0;
   height: 100%;
-  font-family: 'Product Sans';
+  font-family: 'Arial', sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 // Sticky footer
 /*
@@ -19,11 +21,9 @@ html{
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing:antialised;
+  overflow-x: hidden;
 }
-body{
-  max-width: 1280px;
-  margin: 0 auto;
-}
+
 h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0;
