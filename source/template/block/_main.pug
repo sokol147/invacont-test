@@ -3,10 +3,11 @@
 - var articleText = 'Nursery Supply Co. LLC, the manufacturer of Black Platinum and Gold Diamond hardwood mulch was founded in 1974. In March 2004 the company was purchased by its current ownership based in Louisville, KY. Our mulch manufacturing plants in Clay City, KY and Greenville, IN provide numerous mulch products to customers throughout Ohio, Indiana and Kentucky. We service a customer base which includes;...,'
 main.main
   .header__wrapper
-    include ../block/_header
-    h1.main__header= pageHeader
-    article.main__article
-      h2.article__header= articleHeader
-      p.article__text= articleText
+    .header__content
+      include ../block/_header
+      h1.main__header= pageHeader
+      article.main__article
+        h2.article__header= articleHeader
+        p.article__text= articleText
   include ../block/_products
   include ../block/_benefits

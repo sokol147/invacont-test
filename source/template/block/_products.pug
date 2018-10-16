@@ -19,10 +19,11 @@
   ]
 - var productsText = 'Learn more'
 section.products
-  ul.products__list
-    each item in products
-      li.products__item
-        figure
-          img(src=`${item.img}` alt=`${item.name}`).products__image
-          figcaption.products__name= item.name
-        a.products__link(href='#').btn-default= productsText
+  .products__content
+    ul.products__list
+      each item in products
+        li.products__item
+          figure
+            img(src=`${item.img}` alt=`${item.name}`).products__image
+            figcaption.products__name= item.name
+          a.products__link(href='#').btn-default= productsText

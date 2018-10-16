@@ -30,6 +30,7 @@ footer.footer
       each item in menu
         li.menu__item
           a.menu__link(href=`${item.link}` class=`menu__link--${item.active}`)= item.text
-  .footer__copyright
-    p.copyrigth__text= copyText
-    p.copyrigth__dev= copyDev
+  .footer__copyright-wrapper
+    .footer__copyright
+      p.copyrigth__text= copyText
+      p.copyrigth__dev= copyDev

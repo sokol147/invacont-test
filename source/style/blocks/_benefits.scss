@@ -1,8 +1,13 @@
 .benefits{
-  background-image: url(../images/bg-benefits.jpg);
-  background-color: #c2caa7;
-  padding: 4.3rem 10rem 5.9375rem;
+  background: #c2caa7 url(../images/bg-benefits.jpg) no-repeat bottom right;
+  background-size: cover;
+  
   &__content{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4.3rem 10rem 5.9375rem;
+  }
+  &__inner{
     max-width: 27.5rem;
   }
   &__btn{
@@ -37,13 +42,13 @@
 }
 
 @media only screen and (max-width: 850px){
-  .benefits{
+  .benefits__content{
     padding: 4.3rem 5rem 5.9375rem;
   }
 }
 
 @media only screen and (max-width: 440px){
-  .benefits{
+  .benefits__content{
     padding: 4.3rem 2rem 5.9375rem;
   }
 }
